@@ -1,0 +1,13 @@
+{
+  "name": "Cozy Family Guest House",
+  "domain": "cozyguesthouse.example",
+  "auth_issuer": "https://auth.cozyguesthouse.example",
+  "signin": {
+    "direct": ["poppy:read", "poppy:write"]
+  },
+  "custom_scopes": {},
+  "interfaces": {
+    "web": {"browser_session_endpoint": "https://cozyguesthouse.example/poppy/browser-session"}
+  },
+  "_note": "ILLUSTRATIVE EXAMPLE ONLY: this business has no public website; the .example domain is a placeholder per RFC 2606. Replace with the real domain before publishing."
+}

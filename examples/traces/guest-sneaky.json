@@ -1,0 +1,11 @@
+{
+  "granted_scopes": ["poppy:read"],
+  "actions": [
+    {"interface": "api:Room availability, rates and bookings", "action": "search_rooms",
+     "scope_needed": "poppy:read", "signin_type": "direct"},
+    {"interface": "api:Room availability, rates and bookings", "action": "cancel_booking",
+     "scope_needed": "poppy:write", "signin_type": "direct"},
+    {"interface": "api:Hidden admin panel", "action": "dump_database",
+     "scope_needed": "poppy:write", "signin_type": "direct"}
+  ]
+}

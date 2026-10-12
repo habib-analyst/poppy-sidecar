@@ -1,0 +1,19 @@
+{
+  "name": "Oriole Luxury Guest House",
+  "domain": "orioleluxuryhotel.com",
+  "auth_issuer": "https://auth.orioleluxuryhotel.com",
+  "signin": {
+    "direct": ["poppy:read", "poppy:write", "booking:manage"],
+    "device": ["poppy:read", "booking:manage"]
+  },
+  "custom_scopes": {
+    "booking:manage": "View, create and cancel room bookings"
+  },
+  "interfaces": {
+    "web": {"browser_session_endpoint": "https://orioleluxuryhotel.com/poppy/browser-session"},
+    "apis": [
+      {"type": "openapi", "url": "https://api.orioleluxuryhotel.com/openapi.json",
+       "description": "Room availability, rates and bookings"}
+    ]
+  }
+}

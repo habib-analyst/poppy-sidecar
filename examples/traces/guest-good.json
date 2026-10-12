@@ -1,0 +1,10 @@
+{
+  "granted_scopes": ["poppy:read", "poppy:write", "booking:manage"],
+  "actions": [
+    {"interface": "api:Room availability, rates and bookings", "action": "search_rooms",
+     "scope_needed": "poppy:read", "signin_type": "direct"},
+    {"interface": "api:Room availability, rates and bookings", "action": "book_room",
+     "scope_needed": "poppy:write", "signin_type": "direct"},
+    {"interface": "web", "action": "view_gallery", "scope_needed": "", "signin_type": "signed_out"}
+  ]
+}

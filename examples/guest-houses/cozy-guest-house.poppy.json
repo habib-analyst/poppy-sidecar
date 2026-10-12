@@ -1,0 +1,19 @@
+{
+  "protocol_version": "0.1",
+  "organization": {
+    "name": "Cozy Family Guest House",
+    "domain": "cozyguesthouse.example"
+  },
+  "auth": {
+    "issuer": "https://auth.cozyguesthouse.example",
+    "direct": {
+      "scopes": [
+        "poppy:read",
+        "poppy:write"
+      ]
+    }
+  },
+  "web": {
+    "browser_session_endpoint": "https://cozyguesthouse.example/poppy/browser-session"
+  }
+}

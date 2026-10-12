@@ -1,0 +1,43 @@
+{
+  "protocol_version": "0.1",
+  "organization": {
+    "name": "Oriole Guest House Islamabad",
+    "domain": "orioleguesthouse.com"
+  },
+  "auth": {
+    "issuer": "https://auth.orioleguesthouse.com",
+    "direct": {
+      "scopes": [
+        "poppy:read",
+        "poppy:write",
+        "booking:manage"
+      ]
+    },
+    "device": {
+      "scopes": [
+        "poppy:read"
+      ]
+    },
+    "custom_scopes": {
+      "booking:manage": "View, create and cancel room bookings"
+    }
+  },
+  "web": {
+    "browser_session_endpoint": "https://orioleguesthouse.com/poppy/browser-session"
+  },
+  "apis": [
+    {
+      "type": "openapi",
+      "url": "https://api.orioleguesthouse.com/openapi.json",
+      "description": "Room availability, rates and bookings"
+    }
+  ],
+  "agent": {
+    "protocols": [
+      {
+        "type": "poppy",
+        "endpoint": "https://api.orioleguesthouse.com/poppy/conversations"
+      }
+    ]
+  }
+}

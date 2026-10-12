@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poppy-sidecar"
+version = "0.1.0"
+description = "First independent developer kit for the Personal Agent Protocol: poppy.json generator, spec validator, and agent scope-compliance testbed"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Habib Ur Rehman"}]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["personal-agent-protocol", "poppy", "agents", "oauth", "compliance", "validation"]
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/poppy-sidecar"
+Repository = "https://github.com/habib-analyst/poppy-sidecar"
+
+[project.scripts]
+poppy-sidecar = "poppy_sidecar.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["poppy_sidecar*"]
